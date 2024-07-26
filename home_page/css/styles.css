@@ -1,0 +1,201 @@
+
+.scroll-effect {
+    text-align: center;
+    font-size: 80px;
+    animation: shine 2s linear forwards;
+}
+
+/*use twice: scroll-effect and footer in home page*/
+@keyframes shine {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    50% {
+        text-shadow: 2px 2px 8px rgba(128, 123, 123, 0.5);
+    }
+
+    100% {
+        text-shadow: 2px 2px 20px rgba(169, 162, 162, 0.802),
+            0 0 20px rgba(255, 255, 255, 0.5);
+    }
+}
+
+/*body of all pages*/
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*peragraghs in sections only!*/
+section p {
+    width: 75%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/*main images in home page*/
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image-grid a {
+    flex: 0 1 calc(33.33% - 10px);
+    margin-bottom: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.image-grid a:hover img {
+    transform: scale(1.05);
+}
+
+/*responsivenes*/
+@media only screen and (max-width: 600px) {
+    .image-grid a {
+        flex: 0 1 calc(100% - 10px);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .image-grid a {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .image-grid a {
+        flex: 0 1 calc(33.33% - 10px);
+    }
+}
+
+#text_in_center {
+    text-align: center;
+}
+
+footer {
+    padding: 5px;
+    background-color: #abbaba;
+    color: black;
+}
+
+/*outside links (instagram etc.)*/
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid-container a {
+    display: block;
+}
+
+.grid-container img {
+    width: 30px;
+    height: auto;
+}
+
+footer span {
+    background: rgb(255, 226, 62);
+}
+
+.footer-link {
+    color: rgb(123, 123, 123);
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+    animation: shine 2s linear forwards;
+}
+
+/*privecys lists and about*/
+ol li,ul li {
+    font-size: 18px;
+}
+
+ol li a, ul li a {
+    color: rgb(229, 226, 226);
+    font-size: 20px;
+}
+
+ol li a:hover, ul li a:hover  {
+    color: rgb(203, 103, 103);
+}
+
+aside {
+    width: 20%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #e24747;
+    font-style: italic;
+    font-size: 15px;
+    color: #ffeaea;
+}
+
+aside>p {
+    margin: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid  rgb(197, 58, 58);
+    font-family: sans-serif;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    table {
+        font-size: 0.8rem;
+    }
+}
+
+th,td {
+    border: 1px solid rgb(197, 58, 58);
+    padding: 8px 10px;
+}
+
+
+.gallery {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.image-info {
+    margin-bottom: 20px;
+}
+
+.image-info h6 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.image-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
